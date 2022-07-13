@@ -9,4 +9,4 @@
 
 *.iml
 ./.idea
-**/target/
+./sentinel-dashboard/target/
