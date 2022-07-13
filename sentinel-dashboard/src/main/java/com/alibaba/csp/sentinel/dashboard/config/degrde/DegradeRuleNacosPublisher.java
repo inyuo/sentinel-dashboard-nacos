@@ -21,6 +21,7 @@ import com.alibaba.csp.sentinel.dashboard.rule.DynamicRulePublisher;
 import com.alibaba.csp.sentinel.datasource.Converter;
 import com.alibaba.csp.sentinel.util.AssertUtil;
 import com.alibaba.nacos.api.config.ConfigService;
+import com.alibaba.nacos.api.config.ConfigType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -48,7 +49,7 @@ public class DegradeRuleNacosPublisher implements DynamicRulePublisher<List<Degr
 //        String dataId = new StringBuffer(appName).append(NacosConfigUtil.DEGRADE_DATA_ID_POSTFIX).toString();
 //        configService.publishConfig(dataId, NacosConfigUtil.GROUP_ID, converter.convert(rules));
         configService.publishConfig(appName + NacosConfigUtil.DEGRADE_DATA_ID_POSTFIX,
-                NacosConfigUtil.GROUP_ID, converter.convert(rules));
+                NacosConfigUtil.GROUP_ID, converter.convert(rules), ConfigType.JSON.getType());
 
 
     }
