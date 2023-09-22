@@ -14,7 +14,7 @@
 
     <properties>
         <resource.delimiter>@</resource.delimiter>
-        <spring.boot.version>2.5.12</spring.boot.version>
+        <spring.boot.version>3.0.11</spring.boot.version>
         <curator.version>4.0.1</curator.version>
     </properties>
 
