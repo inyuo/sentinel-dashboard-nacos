@@ -7,6 +7,21 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
+/target/
+./target/
+./target/classes/
+./target/classes/META-INF/
+./target/classes/META-INF/MANIFEST.MF
+./target/classes/META-INF/maven/
+./target/classes/META-INF/maven/com.alibaba/
+./target/classes/META-INF/maven/com.alibaba/p3c/
+./target/classes/META-INF/maven/com.alibaba/p3c/pmd/
+./target/classes/META-INF/maven/com.alibaba/p3c/pmd/lang/
+./target/classes/META-INF/maven/com.alibaba/p3c/pmd/lang/java/
+./target/classes/META-INF/maven/com.alibaba/p3c/pmd/lang/java/ruleset/
+./target/classes/META-INF/maven/com.alibaba/p3c/pmd/lang/java/ruleset/2.0.0/
 *.iml
 ./.idea
+.idea/
 ./sentinel-dashboard/target/
+*/target/
